@@ -10,6 +10,7 @@ class TipoUsuarioComponent extends Component
     public function render()
     {
         $tipos = tipo_usuario::all();
+        //$tipos = tipo_usuario::where('estado', 1)->get();
         return view('livewire.tipo-usuario-component', compact('tipos'));
     }
 
